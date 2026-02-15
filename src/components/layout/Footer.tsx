@@ -20,13 +20,13 @@ const Footer = () => {
               Más de 5 años impulsando marcas.
             </p>
             <div className="flex gap-4">
-              <a href="https://facebook.com/impulsa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com/impulsa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/company/impulsa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -66,14 +66,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                <a href="tel:+573001234567" className="text-white/80 hover:text-primary transition-colors">
-                  +57 300 123 4567
+                <a href="tel:+573232336978" className="text-white/80 hover:text-primary transition-colors">
+                  +57 323 233 6978
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                <a href="mailto:info@impulsa.com" className="text-white/80 hover:text-primary transition-colors">
-                  info@impulsa.com
+                <a href="mailto:info@impulsas.co" className="text-white/80 hover:text-primary transition-colors">
+                  info@impulsas.co
                 </a>
               </li>
             </ul>

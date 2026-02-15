@@ -48,7 +48,7 @@ const WhyUsSection = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Con más de 5 años de experiencia en el mercado, en IMPULSA nos
-              hemos consolidado como líderes en la industria de promocionales y 
+              hemos consolidado como líderes en la industria de la tecnología, promocionales y 
               dotaciones empresariales.
             </p>
 

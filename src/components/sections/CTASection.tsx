@@ -23,13 +23,13 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="xl" asChild>
-              <a href="https://wa.me/573001234567?text=Hola,%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/573232336978?text=Hola,%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener noreferrer">
                 Solicitar Cotización Gratis
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="tel:+573001234567">
+              <a href="tel:573232336978">
                 <Phone className="w-5 h-5" />
                 Llamar Ahora
               </a>
@@ -38,13 +38,13 @@ const CTASection = () => {
 
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-primary-foreground">
-            <a href="tel:+573001234567" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+573232336978" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-5 h-5" />
-              <span>+57 300 123 4567</span>
+              <span>+57 323 233 6978</span>
             </a>
-            <a href="mailto:info@impulsa.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:info@impulsas.co" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-5 h-5" />
-              <span>info@impulsa.com</span>
+              <span>info@impulsas.co</span>
             </a>
           </div>
         </div>

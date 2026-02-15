@@ -112,7 +112,7 @@ const ProductsSection = () => {
         <div className="text-center mt-16">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <Button variant="default" size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="https://wa.me/573001234567?text=Hola,%20quiero%20ver%20el%20catálogo%20completo" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/573232336978?text=Hola,%20quiero%20ver%20el%20catálogo%20completo" target="_blank" rel="noopener noreferrer">
                 Ver Catálogo Completo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>

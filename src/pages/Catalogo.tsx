@@ -21,6 +21,14 @@ interface CategoryData {
   products: Product[];
 }
 
+import camisaImg from "../assets/images/Camisa.png";
+import hoodiesImg from "../assets/images/Hoodies.png";
+import overolImg from "../assets/images/overol.png";
+import chaquetaImg from "../assets/images/chaqueta.png";
+import GorrasImg from "../assets/images/gorras.png";
+import bataImg from "../assets/images/bata.png";
+
+
 const catalogData: Record<string, CategoryData> = {
   dotaciones: {
     title: "Dotaciones",
@@ -28,34 +36,35 @@ const catalogData: Record<string, CategoryData> = {
     heroImage: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&auto=format&fit=crop&q=80",
     products: [
       {
-        name: "Camisas Polo",
-        description: "Polos bordados con logo empresarial",
-        image: catalogPolo,
+        name: "Camisas",
+        description: "Camisestas bordadas con logo empresarial",
+        image: camisaImg,
       },
       {
-        name: "Camisetas",
-        description: "Camisetas estampadas o bordadas",
-        image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&auto=format&fit=crop&q=80",
+        name: "Hoodies",
+        description: "Hoodies estampadas o bordadas",
+        image: hoodiesImg,
+
       },
       {
         name: "Overoles",
         description: "Overoles industriales personalizados",
-        image: "https://images.unsplash.com/photo-1618453292459-53424b66bb6a?w=600&auto=format&fit=crop&q=80",
+        image: overolImg,
       },
       {
         name: "Chaquetas",
         description: "Chaquetas corporativas con bordado",
-        image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&auto=format&fit=crop&q=80",
+        image: chaquetaImg,
       },
       {
         name: "Pantalones",
-        description: "Pantalones de trabajo de alta durabilidad",
-        image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&auto=format&fit=crop&q=80",
+        description: "Gorras de regalo y dotacion",
+        image: GorrasImg,
       },
       {
         name: "Batas Médicas",
         description: "Uniformes para personal de salud",
-        image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600&auto=format&fit=crop&q=80",
+        image: bataImg,
       },
     ],
   },
@@ -279,13 +288,7 @@ const Catalogo = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     {/* Logo overlay */}
-                    <div className="absolute top-4 left-4 bg-white/90 rounded-lg p-2 shadow-md">
-                      <img 
-                        src={logoImpulsa} 
-                        alt="IMPULSA" 
-                        className="h-5 w-auto object-contain"
-                      />
-                    </div>
+                   
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-card-foreground mb-2">
@@ -293,7 +296,7 @@ const Catalogo = () => {
                     </h3>
                     <p className="text-muted-foreground mb-4">{product.description}</p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
-                      <a href="https://wa.me/573001234567?text=Hola,%20me%20interesa%20información%20sobre%20{product.name}">
+                      <a href="https://wa.me/573232336978?text=Hola,%20me%20interesa%20información%20sobre%20{product.name}">
                         Solicitar Cotización
                       </a>
                     </Button>
@@ -345,7 +348,7 @@ const Catalogo = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" asChild>
-                <a href="https://wa.me/573001234567?text=Hola,%20quiero%20una%20cotización">
+                <a href="https://wa.me/573232336978?text=Hola,%20quiero%20una%20cotización">
                   <Phone className="w-5 h-5 mr-2" />
                   Contactar por WhatsApp
                 </a>
