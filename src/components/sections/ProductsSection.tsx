@@ -70,15 +70,7 @@ const ProductsSection = () => {
                   alt={category.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Logo overlay */}
-                <div className="absolute top-4 left-4 bg-white/95 rounded-xl p-2.5 shadow-lg backdrop-blur-sm">
-                  <img 
-                    src={logoImpulsa} 
-                    alt="IMPULSA" 
-                    className="h-7 w-auto object-contain"
-                  />
-                </div>
-
+        
                 {/* Gradient Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-0 group-hover:opacity-70 transition-opacity duration-500`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />

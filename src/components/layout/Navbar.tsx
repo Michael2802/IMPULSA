@@ -86,7 +86,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant={isScrolled || !isHomePage ? "default" : "outline"} size="lg" className={!isScrolled && isHomePage ? "border-white text-white hover:bg-white hover:text-navy-dark" : ""} asChild>
-              <a href="https://wa.me/573001234567?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a href="https://wa.me/573232336978?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </Button>
           </div>
 

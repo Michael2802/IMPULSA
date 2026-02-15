@@ -27,6 +27,29 @@ import overolImg from "../assets/images/overol.png";
 import chaquetaImg from "../assets/images/chaqueta.png";
 import GorrasImg from "../assets/images/gorras.png";
 import bataImg from "../assets/images/bata.png";
+import powerbankImg from "../assets/images/powerbank.png";
+import USbImg from "../assets/images/USB.jpg";
+import audifonosImg from "../assets/images/audifonos.png";
+import parlanteImg from "../assets/images/parlante.png";
+import RAMImg from "../assets/images/RAM.png";
+import camarawebImg from "../assets/images/camara.png";
+import impresoraImg from "../assets/images/impresora.png";
+import tecladoImg from "../assets/images/teclado.png";
+import discoImg from "../assets/images/SD.png";
+import mouseImg from "../assets/images/mousepad.png";
+import cableImg from "../assets/images/cables.png";
+import monitorImg from "../assets/images/monitor.png";
+import agendaImg from "../assets/images/agendas.png";
+import bolsasImg from "../assets/images/bolsas.png";
+import botellasImg from "../assets/images/botilo.png";
+import botonesImg from "../assets/images/botones.png";
+import kitImg from "../assets/images/kit.png";
+import morralesImg from "../assets/images/maleta.png";
+import soporteImg from "../assets/images/soporte.png";
+import sombrillasImg from "../assets/images/sombrilla.png";
+import esferosImg from "../assets/images/esferos.png";
+
+
 
 
 const catalogData: Record<string, CategoryData> = {
@@ -76,62 +99,62 @@ const catalogData: Record<string, CategoryData> = {
       {
         name: "USB Personalizadas",
         description: "Memorias USB con logo grabado",
-        image: "https://images.unsplash.com/photo-1628557044797-f21a177c37ec?w=600&auto=format&fit=crop&q=80",
+        image: USbImg,
       },
       {
         name: "Power Banks",
         description: "Cargadores portátiles personalizados",
-        image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&auto=format&fit=crop&q=80",
+        image: powerbankImg,
       },
       {
         name: "Audífonos",
         description: "Audífonos bluetooth con caja personalizada",
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        image: audifonosImg,
       },
       {
         name: "Parlantes",
         description: "Parlantes bluetooth promocionales",
-        image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80",
+        image: parlanteImg,
       },
       {
         name: "Memorias RAM",
         description: "Módulos de memoria RAM para repotenciar equipos",
-        image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=600&auto=format&fit=crop&q=80",
+        image: RAMImg,
       },
       {
         name: "Cámaras Web",
         description: "Webcams HD para videoconferencias y streaming",
-        image: "https://images.unsplash.com/photo-1611532602666-4d68e5898f65?w=600&auto=format&fit=crop&q=80",
+        image: camarawebImg,
       },
       {
         name: "Impresoras",
         description: "Impresoras láser y multifuncionales para oficina",
-        image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&auto=format&fit=crop&q=80",
+        image: impresoraImg,
       },
       {
         name: "Teclados y Mouse",
         description: "Periféricos ergonómicos alámbricos e inalámbricos",
-        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80",
+        image: tecladoImg,
       },
       {
         name: "Discos Duros y SSD",
         description: "Almacenamiento externo e interno para equipos",
-        image: "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=600&auto=format&fit=crop&q=80",
+        image: discoImg,
       },
       {
         name: "Mouse Pads",
         description: "Mouse pads personalizados con tu marca",
-        image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600&auto=format&fit=crop&q=80",
+        image: mouseImg,
       },
       {
         name: "Cables y Adaptadores",
         description: "HDMI, USB-C, hubs y adaptadores multipuerto",
-        image: "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=600&auto=format&fit=crop&q=80",
+        image: cableImg,
       },
       {
         name: "Monitores",
         description: "Pantallas y monitores para oficina y diseño",
-        image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&auto=format&fit=crop&q=80",
+        image: monitorImg,
       },
     ],
   },
@@ -143,62 +166,48 @@ const catalogData: Record<string, CategoryData> = {
       {
         name: "Agenda",
         description: "Agendas ejecutivas personalizadas con tu logo",
-        image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&auto=format&fit=crop&q=80",
+        image: agendaImg,
       },
-      {
-        name: "Alcancía",
-        description: "Alcancías promocionales con diseños únicos",
-        image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=600&auto=format&fit=crop&q=80",
-      },
+     
       {
         name: "Bolsas Publicitarias",
         description: "Bolsas de tela, papel y ecológicas personalizadas",
-        image: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?w=600&auto=format&fit=crop&q=80",
+        image: bolsasImg,
       },
       {
         name: "Botellas y Termos",
         description: "Termos y botellas de acero inoxidable con tu marca",
-        image: catalogBotella,
+        image: botellasImg,
       },
       {
         name: "Botones Publicitarios",
         description: "Botones y pins personalizados para eventos",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+        image: botonesImg,
       },
       {
         name: "Cuidado Personal",
         description: "Kits de aseo, espejos, neceseres y más",
-        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
-      },
-      {
-        name: "Oficina y Escolar",
-        description: "Libretas, porta documentos, organizadores",
-        image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&auto=format&fit=crop&q=80",
-      },
-      {
-        name: "Hogar",
-        description: "Artículos para el hogar con tu marca",
-        image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&auto=format&fit=crop&q=80",
+        image: kitImg,
       },
       {
         name: "Morrales",
         description: "Morrales, tulas y maletines personalizados",
-        image: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&auto=format&fit=crop&q=80",
+        image: morralesImg,
       },
       {
-        name: "Relojes",
-        description: "Relojes de pared y pulsera con tu logo",
-        image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80",
+        name: "Soportes",
+        description: "Soportes para tu celular personalizados y flexibles",
+        image: soporteImg,
       },
       {
         name: "Sombrillas",
         description: "Sombrillas y paraguas personalizados",
-        image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&auto=format&fit=crop&q=80",
+        image: sombrillasImg,
       },
       {
         name: "Esferos",
         description: "Bolígrafos y esferos con grabado o impresión",
-        image: "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=600&auto=format&fit=crop&q=80",
+        image: esferosImg,
       },
     ],
   },

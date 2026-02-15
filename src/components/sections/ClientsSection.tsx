@@ -1,5 +1,5 @@
-import clientLG from "@/assets/client-lg.png";
-import clientCroydon from "@/assets/client-croydon.png";
+import clientLG from "@/assets/client-siscol.png";
+import clientCroydon from "@/assets/client-metrex.png";
 import clientAlpina from "@/assets/client-alpina.png";
 import clientMercadoLibre from "@/assets/client-mercadolibre.png";
 import clientAkairos from "@/assets/client-akairos.png";
