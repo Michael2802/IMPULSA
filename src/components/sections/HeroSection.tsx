@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6 animate-slide-up backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-medium text-white">
-                Promocionales y Dotaciones
+                Promocionales, Dotaciones y Tecnología Empresarial
               </span>
             </div>
             
