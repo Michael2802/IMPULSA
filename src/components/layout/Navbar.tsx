@@ -117,7 +117,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button variant="default" size="lg" className="mt-2" asChild>
-                <a href="https://wa.me/573001234567?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>WhatsApp</a>
+                <a href="https://wa.me/573232336978?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>WhatsApp</a>
               </Button>
             </div>
           </div>

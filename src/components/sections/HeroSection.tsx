@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6 animate-slide-up backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-medium text-white">
-                Promocionales, Dotaciones y Tecnología Empresarial
+                Dotaciones, Promocionales y Tecnología Personalizada para Empresas en Colombia
               </span>
             </div>
             
@@ -56,8 +56,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-light mb-8 max-w-xl mx-auto lg:mx-0 animate-slide-up-delayed">
-              Creamos productos promocionales y dotaciones de alta calidad que hacen que tu empresa destaque.
-              Desde uniformes hasta merchandising personalizado.
+              En Impulsas ofrecemos dotaciones empresariales, artículos promocionales y tecnología personalizada con el logo de tu marca. Uniformes corporativos, regalos empresariales y accesorios tecnológicos con entrega a nivel nacional.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up-delayed">
@@ -68,7 +67,7 @@ const HeroSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#productos">Ver Catálogo</a>
+                <a href="#productos">Ver Catálogo Completo</a>
               </Button>
             </div>
 

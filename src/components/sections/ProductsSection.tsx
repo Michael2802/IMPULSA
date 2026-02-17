@@ -9,7 +9,7 @@ import productTecnologia from "@/assets/product-tecnologia.jpg";
 // Categorías principales
 const categories = [
   {
-    title: "Dotaciones",
+    title: "Dotaciones Empresariales",
     description: "Uniformes corporativos, camisas, pantalones, overoles, batas y más prendas para tu equipo",
     image: productUniformes,
     color: "from-blue-600 to-blue-800",
@@ -23,7 +23,7 @@ const categories = [
     slug: "tecnologia",
   },
   {
-    title: "Artículos",
+    title: "Artículos Promocionales",
     description: "Agendas, esferos, bolsas, termos, morrales, relojes y mucho más para tu marca",
     image: productOficina,
     color: "from-amber-500 to-orange-600",
