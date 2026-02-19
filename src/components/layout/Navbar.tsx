@@ -21,11 +21,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Inicio", href: "/#inicio" },
-    { name: "Servicios", href: "/#servicios" },
-    { name: "Productos", href: "/#productos" },
-    { name: "Nosotros", href: "/#nosotros" },
-    { name: "Contacto", href: "/#contacto" },
+    { name: "Inicio", href: "#inicio" },
+    { name: "Servicios", href: "#servicios" },
+    { name: "Productos", href: "#productos" },
+    { name: "Nosotros", href: "#nosotros" },
+    { name: "Contacto", href: "#contacto" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

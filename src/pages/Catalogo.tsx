@@ -21,12 +21,13 @@ interface CategoryData {
   products: Product[];
 }
 
-import camisaImg from "../assets/images/Camisa.png";
-import hoodiesImg from "../assets/images/Hoodies.png";
-import overolImg from "../assets/images/overol.png";
-import chaquetaImg from "../assets/images/chaqueta.png";
-import GorrasImg from "../assets/images/gorras.png";
-import bataImg from "../assets/images/bata.png";
+import empresarialImg from "../assets/images/Empresarial.png";
+import cocinalImg from "../assets/images/cocina.png";
+import industrialImg from "../assets/images/industrial.png";
+import medicoImg from "../assets/images/Uniformemedico.png";
+import termicosImg from "../assets/images/termico.png";
+import uniformesEPPImg from "../assets/images/uniformesEPP.png";
+
 import powerbankImg from "../assets/images/powerbank.png";
 import USbImg from "../assets/images/USB.jpg";
 import audifonosImg from "../assets/images/audifonos.png";
@@ -39,6 +40,7 @@ import discoImg from "../assets/images/SD.png";
 import mouseImg from "../assets/images/mousepad.png";
 import cableImg from "../assets/images/cables.png";
 import monitorImg from "../assets/images/monitor.png";
+
 import agendaImg from "../assets/images/agendas.png";
 import bolsasImg from "../assets/images/bolsas.png";
 import botellasImg from "../assets/images/botilo.png";
@@ -48,46 +50,49 @@ import morralesImg from "../assets/images/maleta.png";
 import soporteImg from "../assets/images/soporte.png";
 import sombrillasImg from "../assets/images/sombrilla.png";
 import esferosImg from "../assets/images/esferos.png";
+import camisaImg from "../assets/images/Camisa.png";
+import hoodiesImg from "../assets/images/Hoodies.png";
+import GorrasImg from "../assets/images/gorras.png";
 
 
 
 
 const catalogData: Record<string, CategoryData> = {
   dotaciones: {
-    title: "Dotaciones",
+    title: "Dotaciones Empresariales",
     description: "Uniformes corporativos de alta calidad con personalización completa. Camisas, pantalones, overoles, batas médicas y más.",
     heroImage: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&auto=format&fit=crop&q=80",
     products: [
       {
-        name: "Camisas",
+        name: "Uniformes Coporativos y Empresariales",
         description: "Camisestas bordadas con logo empresarial",
-        image: camisaImg,
+        image: empresarialImg,
       },
       {
-        name: "Hoodies",
+        name: "Uniforme de Cocina (dotaciones gastronomicas)",
         description: "Hoodies estampadas o bordadas",
-        image: hoodiesImg,
+        image: cocinalImg,
 
       },
       {
-        name: "Overoles",
-        description: "Overoles industriales personalizados",
-        image: overolImg,
+        name: "Uniforme industriales para planta de producción",
+        description: "Uniforme industriales para planta de producción",
+        image: industrialImg,
       },
       {
-        name: "Chaquetas",
-        description: "Chaquetas corporativas con bordado",
-        image: chaquetaImg,
+        name: "Uniformes médicos y de salud",
+        description: "Uniformes médicos y de salud",
+        image: medicoImg,
       },
       {
-        name: "Pantalones",
-        description: "Gorras de regalo y dotacion",
-        image: GorrasImg,
+        name: "Uniformes termicos para cuartos fríos",
+        description: "Uniformes termicos para cuartos fríos",
+        image: termicosImg,
       },
       {
-        name: "Batas Médicas",
-        description: "Uniformes para personal de salud",
-        image: bataImg,
+        name: "Uniformes y EPP de seguridad",
+        description: "Uniformes y EPP de seguridad",
+        image: uniformesEPPImg,
       },
     ],
   },
@@ -208,6 +213,21 @@ const catalogData: Record<string, CategoryData> = {
         name: "Esferos",
         description: "Bolígrafos y esferos con grabado o impresión",
         image: esferosImg,
+      },
+      {
+        name: "Camisa",
+        description: "Bolígrafos y esferos con grabado o impresión",
+        image: camisaImg,
+      },
+      {
+        name: "Hoddies",
+        description: "Bolígrafos y esferos con grabado o impresión",
+        image: hoodiesImg,
+      },
+      {
+        name: "Gorras",
+        description: "Bolígrafos y esferos con grabado o impresión",
+        image: GorrasImg,
       },
     ],
   },
