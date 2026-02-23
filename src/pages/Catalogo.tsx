@@ -64,34 +64,34 @@ const catalogData: Record<string, CategoryData> = {
     heroImage: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&auto=format&fit=crop&q=80",
     products: [
       {
-        name: "Uniformes Coporativos y Empresariales",
-        description: "Camisestas bordadas con logo empresarial",
+        name: "👔 Uniformes Corporativos y Empresariales",
+        description: "Proyecte la mejor imagen de su marca con nuestros uniformes corporativos. Ofrecemos sastrería empresarial, camisas bordadas y conjuntos ejecutivos que combinan elegancia con comodidad diaria. La solución ideal para oficinas, bancos y equipos de atención al cliente.",
         image: empresarialImg,
       },
       {
-        name: "Uniforme de Cocina (dotaciones gastronomicas)",
-        description: "Hoodies estampadas o bordadas",
+        name: "👨‍🍳 Uniformes de Cocina (Dotaciones Gastronómicas)",
+        description: "Diseñados para la intensidad del servicio, nuestros uniformes de cocina ofrecen frescura y seguridad. Contamos con filipinas, delantales y gorros en telas resistentes a las manchas y altas temperaturas. Equipe a sus chefs y auxiliares con prendas de alta durabilidad y diseño moderno.",
         image: cocinalImg,
 
       },
       {
-        name: "Uniforme industriales para planta de producción",
-        description: "Uniforme industriales para planta de producción",
+        name: "🏭 Planta de Producción (Uniformes Industriales)",
+        description: "Creemos en la potencia de una identidad corporativa sólida y protegida. Nuestras dotaciones industriales están hechas para resistir el ritmo de la producción moderna, reflejando el orgullo y la profesionalidad de su empresa en cada costura.",
         image: industrialImg,
       },
       {
-        name: "Uniformes médicos y de salud",
-        description: "Uniformes médicos y de salud",
+        name: "🩺 Sector Salud (Uniformes Médicos)",
+        description: "Nuestra prioridad es cuidar a quienes nos cuidan. Diseñamos uniformes médicos que combinan tecnología antifluido con una comodidad excepcional, permitiendo que los profesionales de la salud se enfoquen en lo más importante: salvar vidas con total seguridad y estilo",
         image: medicoImg,
       },
       {
-        name: "Uniformes termicos para cuartos fríos",
-        description: "Uniformes termicos para cuartos fríos",
+        name: "❄️ Cuartos Fríos (Uniformes Térmicos)",
+        description: "Entendemos que el rendimiento no debe detenerse ante el clima. Nuestra línea térmica está diseñada para desafiar temperaturas extremas, garantizando que cada trabajador en ambientes de congelación cuente con la protección necesaria para operar de manera eficiente, segura y cálida.",
         image: termicosImg,
       },
       {
-        name: "Uniformes y EPP de seguridad",
-        description: "Uniformes y EPP de seguridad",
+        name: "🛡️ Seguridad Industrial (EPP)",
+        description: "La seguridad no es un accesorio, es una promesa. Nos comprometemos a entregar Equipos de Protección Personal de la más alta calidad, asegurando que cada integrante de su fuerza laboral regrese a casa sano y salvo, sin importar cuán exigente sea su entorno de trabajo.",
         image: uniformesEPPImg,
       },
     ],
