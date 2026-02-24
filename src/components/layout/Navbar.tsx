@@ -8,16 +8,29 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/" || location.pathname === "";
+
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const navLinks = [
@@ -28,10 +41,13 @@ const Navbar = () => {
     { name: "Contacto", href: "#contacto" },
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault();
     const sectionId = href.replace("/#", "#");
-    
+
     if (!isHomePage) {
       navigate("/" + sectionId);
     } else {
@@ -40,90 +56,107 @@ const Navbar = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+
+    setIsOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-md" 
-        : "bg-transparent border-b border-transparent"
-    }`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a 
-            href="/#inicio" 
-            onClick={(e) => handleNavClick(e, "/#inicio")}
-            className="flex items-center group"
-          >
-            <img 
-              src={logoImpulsa} 
-              alt="IMPULSA - Dotación & Promocionales" 
-              className={`h-16 md:h-20 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${
-                isScrolled || !isHomePage ? "" : "brightness-0 invert"
-              }`}
-            />
-          </a>
+    <>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled || isMobile
+            ? "bg-background/90 backdrop-blur-xl border-b border-border"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className={`font-medium transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${
-                  isScrolled || !isHomePage 
-                    ? "text-muted-foreground hover:text-primary" 
-                    : "text-white/90 hover:text-white"
+            {/* Logo */}
+            <a
+              href="/#inicio"
+              onClick={(e) => handleNavClick(e, "/#inicio")}
+              className="flex items-center"
+            >
+              <img
+                src={logoImpulsa}
+                alt="IMPULSA"
+                className={`h-16 md:h-20 w-auto ${
+                  isScrolled || !isHomePage || isMobile
+                    ? ""
+                    : "brightness-0 invert"
                 }`}
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
+              />
+            </a>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant={isScrolled || !isHomePage ? "default" : "outline"} size="lg" className={!isScrolled && isHomePage ? "border-white text-white hover:bg-white hover:text-navy-dark" : ""} asChild>
-              <a href="https://wa.me/573232336978?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className={`md:hidden p-2 ${isScrolled || !isHomePage ? "text-foreground" : "text-white"}`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-slide-up">
-            <div className="flex flex-col gap-4">
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-muted-foreground hover:text-primary font-medium transition-colors duration-300 py-2"
-                  onClick={(e) => {
-                    handleNavClick(e, link.href);
-                    setIsOpen(false);
-                  }}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className={`font-medium transition-colors duration-300 ${
+                    isScrolled || !isHomePage
+                      ? "text-muted-foreground hover:text-primary"
+                      : "text-white"
+                  }`}
                 >
                   {link.name}
                 </a>
               ))}
-              <Button variant="default" size="lg" className="mt-2" asChild>
-                <a href="https://wa.me/573232336978?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>WhatsApp</a>
-              </Button>
             </div>
+
+            {/* Mobile Button */}
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
           </div>
-        )}
+        </div>
+      </nav>
+
+      {/* Mobile Panel (FUERA del nav) */}
+      <div
+        className={`fixed top-20 left-0 w-full z-40 md:hidden transition-all duration-300 ${
+          isOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+      >
+        <div className="bg-background/95 backdrop-blur-xl border-b border-border px-6 py-6 shadow-lg">
+          <div className="flex flex-col gap-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-muted-foreground hover:text-primary font-medium text-lg"
+                onClick={(e) => handleNavClick(e, link.href)}
+              >
+                {link.name}
+              </a>
+            ))}
+
+            <Button variant="default" size="lg" asChild>
+              <a
+                href="https://wa.me/573232336978?text=Hola,%20quiero%20más%20información"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+              >
+                WhatsApp
+              </a>
+            </Button>
+          </div>
+        </div>
       </div>
-    </nav>
+    </>
   );
 };
 

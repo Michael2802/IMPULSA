@@ -65,33 +65,33 @@ const catalogData: Record<string, CategoryData> = {
     products: [
       {
         name: "👔 Uniformes Corporativos y Empresariales",
-        description: "Proyecte la mejor imagen de su marca con nuestros uniformes corporativos. Ofrecemos sastrería empresarial, camisas bordadas y conjuntos ejecutivos que combinan elegancia con comodidad diaria. La solución ideal para oficinas, bancos y equipos de atención al cliente.",
+        description: "Impacto y Elegancia. Uniformes corporativos de alta gama con personalización completa. Camisas, pantalones y sastrería que proyectan una imagen profesional y unida.",
         image: empresarialImg,
       },
       {
         name: "👨‍🍳 Uniformes de Cocina (Dotaciones Gastronómicas)",
-        description: "Diseñados para la intensidad del servicio, nuestros uniformes de cocina ofrecen frescura y seguridad. Contamos con filipinas, delantales y gorros en telas resistentes a las manchas y altas temperaturas. Equipe a sus chefs y auxiliares con prendas de alta durabilidad y diseño moderno.",
+        description: "Pasión con Estilo. Filipinas y delantales resistentes al calor y manchas. Indumentaria profesional que combina frescura y diseño para los expertos del sabor.",
         image: cocinalImg,
 
       },
       {
         name: "🏭 Planta de Producción (Uniformes Industriales)",
-        description: "Creemos en la potencia de una identidad corporativa sólida y protegida. Nuestras dotaciones industriales están hechas para resistir el ritmo de la producción moderna, reflejando el orgullo y la profesionalidad de su empresa en cada costura.",
+        description: "Resistencia Industrial. Dotación reforzada para el trabajo pesado. Telas de alta durabilidad diseñadas para soportar la exigencia diaria de la línea de producción.",
         image: industrialImg,
       },
       {
         name: "🩺 Sector Salud (Uniformes Médicos)",
-        description: "Nuestra prioridad es cuidar a quienes nos cuidan. Diseñamos uniformes médicos que combinan tecnología antifluido con una comodidad excepcional, permitiendo que los profesionales de la salud se enfoquen en lo más importante: salvar vidas con total seguridad y estilo",
+        description: "Seguridad y Confort. Scrubs y batas médicas con tecnología antifluido. Diseños ergonómicos para profesionales que exigen libertad de movimiento y máxima higiene.",
         image: medicoImg,
       },
       {
         name: "❄️ Cuartos Fríos (Uniformes Térmicos)",
-        description: "Entendemos que el rendimiento no debe detenerse ante el clima. Nuestra línea térmica está diseñada para desafiar temperaturas extremas, garantizando que cada trabajador en ambientes de congelación cuente con la protección necesaria para operar de manera eficiente, segura y cálida.",
+        description: "Protección Extrema. Overoles y chaquetas térmicas certificadas para temperaturas bajo cero. Mantenga a su equipo cálido, seco y productivo en ambientes de congelación.",
         image: termicosImg,
       },
       {
         name: "🛡️ Seguridad Industrial (EPP)",
-        description: "La seguridad no es un accesorio, es una promesa. Nos comprometemos a entregar Equipos de Protección Personal de la más alta calidad, asegurando que cada integrante de su fuerza laboral regrese a casa sano y salvo, sin importar cuán exigente sea su entorno de trabajo.",
+        description: "Compromiso Total. Equipos de protección personal que cumplen normativas internacionales. Cascos, guantes y trajes especializados para minimizar riesgos laborales.",
         image: uniformesEPPImg,
       },
     ],
@@ -216,17 +216,17 @@ const catalogData: Record<string, CategoryData> = {
       },
       {
         name: "Camisa",
-        description: "Bolígrafos y esferos con grabado o impresión",
+        description: "Camisas, Camisetas personalizadas",
         image: camisaImg,
       },
       {
         name: "Hoddies",
-        description: "Bolígrafos y esferos con grabado o impresión",
+        description: "Hoddies, Buzos con tu marca personal",
         image: hoodiesImg,
       },
       {
         name: "Gorras",
-        description: "Bolígrafos y esferos con grabado o impresión",
+        description: "Gorras, Cachuchas a tu estilo",
         image: GorrasImg,
       },
     ],
