@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+
+
 export default {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
@@ -120,9 +122,14 @@ export default {
   				}
   			}
   		},
+		float: {
+        '0%, 100%': { transform: 'translateY(0px)' },
+        '50%': { transform: 'translateY(-10px)' },
+    },
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			float: 'float 3s ease-in-out infinite',
   		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
@@ -134,6 +141,8 @@ export default {
   			'2xl': 'var(--shadow-2xl)'
   		}
   	}
+	
   },
   plugins: [require("tailwindcss-animate")],
+  
 } satisfies Config;

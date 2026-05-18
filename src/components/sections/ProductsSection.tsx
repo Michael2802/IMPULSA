@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import logoImpulsa from "@/assets/logo-impulsa.png";
-import productUniformes from "@/assets/product-uniformes.jpg";
+import productUniformes from "@/assets/product-uniformes.png";
 import productOficina from "@/assets/product-oficina.jpg";
 import productTecnologia from "@/assets/product-tecnologia.jpg";
 

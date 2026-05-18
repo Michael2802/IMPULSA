@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroVideo from "@/assets/hero-video-v5.mp4";
+import heroImage from "@/assets/banner.png";
 import { useCountUp } from "@/hooks/useCountUp";
+import scrollGif from "@/assets/bigote.png";
 
 const CountUpStat = ({ end, suffix, label }: { end: number; suffix: string; label: string }) => {
   const { count, elementRef } = useCountUp({ end, duration: 2500, suffix });
@@ -19,9 +20,16 @@ const CountUpStat = ({ end, suffix, label }: { end: number; suffix: string; labe
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+      
       {/* Video Background */}
       <div className="absolute inset-0">
-        <video
+        <img
+            src={heroImage}
+            alt="Hero background"
+            className="absolute inset-0 w-full h-full object-cover md:object-center object-[70%_center] scale-[1.2] md:scale-100"
+          />
+   
+        {/*<video
           autoPlay
           loop
           muted
@@ -29,7 +37,9 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full object-cover md:object-center object-[70%_center] scale-[1.2] md:scale-100"
         >
           <source src={heroVideo} type="video/mp4" />
-        </video>
+        </video>*/}
+
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy-dark/80 to-navy-dark/40 md:from-navy-dark/90 md:via-navy-dark/70 md:to-transparent" />
       </div>
@@ -81,12 +91,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-white/50 rounded-full" />
+     {/* Scroll Indicator */}
+    
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+          <img
+            src={scrollGif}
+            alt="Scroll indicator"
+            className="w-12 h-12 object-contain"
+          />
         </div>
-      </div>
     </section>
   );
 };

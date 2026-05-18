@@ -14,7 +14,7 @@ const services = [
   {
     icon: Cpu,
     title: "Tecnología Corporativa",
-    description: "Equipos, periféricos, memorias RAM, discos SSD, impresoras, webcams y accesorios tech para repotenciar y equipar tu empresa.",
+    description: "Dispositivos y accesorios útiles (como powerbanks, earbuds, cargadores inalámbricos o memorias USB) personalizados con la identidad de tu marca.",
   },
   {
     icon: Building2,

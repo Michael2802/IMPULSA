@@ -64,33 +64,33 @@ const catalogData: Record<string, CategoryData> = {
     heroImage: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&auto=format&fit=crop&q=80",
     products: [
       {
-        name: "👔 Uniformes Corporativos y Empresariales",
+        name: "Uniformes Corporativos y Empresariales",
         description: "Impacto y Elegancia. Uniformes corporativos de alta gama con personalización completa. Camisas, pantalones y sastrería que proyectan una imagen profesional y unida.",
         image: empresarialImg,
       },
       {
-        name: "👨‍🍳 Uniformes de Cocina (Dotaciones Gastronómicas)",
+        name: "Uniformes de Cocina (Dotaciones Gastronómicas)",
         description: "Pasión con Estilo. Filipinas y delantales resistentes al calor y manchas. Indumentaria profesional que combina frescura y diseño para los expertos del sabor.",
         image: cocinalImg,
 
       },
       {
-        name: "🏭 Planta de Producción (Uniformes Industriales)",
+        name: "Planta de Producción (Uniformes Industriales)",
         description: "Resistencia Industrial. Dotación reforzada para el trabajo pesado. Telas de alta durabilidad diseñadas para soportar la exigencia diaria de la línea de producción.",
         image: industrialImg,
       },
       {
-        name: "🩺 Sector Salud (Uniformes Médicos)",
+        name: "Sector Salud (Uniformes Médicos)",
         description: "Seguridad y Confort. Scrubs y batas médicas con tecnología antifluido. Diseños ergonómicos para profesionales que exigen libertad de movimiento y máxima higiene.",
         image: medicoImg,
       },
       {
-        name: "❄️ Cuartos Fríos (Uniformes Térmicos)",
+        name: "Cuartos Fríos (Uniformes Térmicos)",
         description: "Protección Extrema. Overoles y chaquetas térmicas certificadas para temperaturas bajo cero. Mantenga a su equipo cálido, seco y productivo en ambientes de congelación.",
         image: termicosImg,
       },
       {
-        name: "🛡️ Seguridad Industrial (EPP)",
+        name: "Seguridad Industrial (EPP)",
         description: "Compromiso Total. Equipos de protección personal que cumplen normativas internacionales. Cascos, guantes y trajes especializados para minimizar riesgos laborales.",
         image: uniformesEPPImg,
       },
@@ -325,9 +325,7 @@ const Catalogo = () => {
                     </h3>
                     <p className="text-muted-foreground mb-4">{product.description}</p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
-                      <a href="https://wa.me/573232336978?text=Hola,%20me%20interesa%20información%20sobre%20{product.name}">
-                        Solicitar Cotización
-                      </a>
+                      
                     </Button>
                   </div>
                 </div>

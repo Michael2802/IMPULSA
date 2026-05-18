@@ -1,17 +1,17 @@
-import clientLG from "@/assets/client-siscol.png";
-import clientCroydon from "@/assets/client-metrex.png";
+import clientSiscol from "@/assets/client-siscol.png";
+import clientStarniza from "@/assets/client-starniza.png";
 import clientAlpina from "@/assets/client-alpina.png";
 import clientMercadoLibre from "@/assets/client-mercadolibre.png";
 import clientAkairos from "@/assets/client-akairos.png";
 
 const clients = [
   {
-    name: "LG",
-    logo: clientLG,
+    name: "Siscol",
+    logo: clientSiscol,
   },
   {
-    name: "Croydon",
-    logo: clientCroydon,
+    name: "Starniza",
+    logo: clientStarniza,
   },
   {
     name: "Alpina",
