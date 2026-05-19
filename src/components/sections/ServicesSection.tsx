@@ -1,4 +1,5 @@
 import { Shirt, Gift, Building2, Palette, Truck, Shield, Cpu, Monitor } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const services = [
   {
@@ -34,8 +35,11 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="servicios" className="py-24 bg-muted/50">
+    <section
+    id="servicios" className="py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -53,11 +57,13 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div ref={ref as unknown as React.RefObject<HTMLDivElement>} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2 border border-border"
+              style={{ transitionDelay: `${index * 100}ms` }}
+              className={`group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover border border-border hover:-translate-y-2 transition-all duration-500
+                ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft">
                 <service.icon className="w-7 h-7 text-secondary-foreground" />

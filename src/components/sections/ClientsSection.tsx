@@ -3,6 +3,7 @@ import clientStarniza from "@/assets/client-starniza.png";
 import clientAlpina from "@/assets/client-alpina.png";
 import clientMercadoLibre from "@/assets/client-mercadolibre.png";
 import clientAkairos from "@/assets/client-akairos.png";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const clients = [
   {
@@ -28,8 +29,15 @@ const clients = [
 ];
 
 const ClientsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-16 bg-muted/30 border-y border-border">
+    <section
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-16 bg-muted/30 border-y border-border transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}>
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">

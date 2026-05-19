@@ -77,7 +77,7 @@ const HeroSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#productos">Ver Catálogo Completo</a>
+                <a href="#productos">Detalles para Papá</a>
               </Button>
             </div>
 
