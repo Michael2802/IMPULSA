@@ -31,7 +31,7 @@ import uniformesEPPImg from "../assets/images/uniformesEPP.png";
 import powerbankImg from "../assets/images/powerbank.png";
 import USbImg from "../assets/images/USB.jpg";
 import audifonosImg from "../assets/images/audifonos.png";
-import parlanteImg from "../assets/images/parlante.png";
+import parlanteImg from "../assets/images/Bocina.jpg";
 import RAMImg from "../assets/images/RAM.png";
 import camarawebImg from "../assets/images/camara.png";
 import impresoraImg from "../assets/images/impresora.png";
@@ -55,13 +55,15 @@ import hoodiesImg from "../assets/images/Hoodies.png";
 import GorrasImg from "../assets/images/gorras.png";
 
 
-
+import dotacionesImg from "@/assets/empresariales.png";
+import tecimg from "@/assets/Tecnologia.png";
+import promoimg from "@/assets/prom.png";
 
 const catalogData: Record<string, CategoryData> = {
   dotaciones: {
     title: "Dotaciones Empresariales",
     description: "Uniformes corporativos de alta calidad con personalización completa. Camisas, pantalones, overoles, batas médicas y más.",
-    heroImage: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&auto=format&fit=crop&q=80",
+    heroImage: dotacionesImg,
     products: [
       {
         name: "Uniformes Corporativos y Empresariales",
@@ -99,7 +101,7 @@ const catalogData: Record<string, CategoryData> = {
   tecnologia: {
     title: "Tecnología",
     description: "Equipos de cómputo, periféricos, memorias RAM, discos SSD, impresoras, webcams y accesorios tecnológicos para equipar y repotenciar tu empresa.",
-    heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&auto=format&fit=crop&q=80",
+    heroImage: tecimg,
     products: [
       {
         name: "USB Personalizadas",
@@ -164,9 +166,9 @@ const catalogData: Record<string, CategoryData> = {
     ],
   },
   articulos: {
-    title: "Artículos",
+    title: "Artículos Promocionales",
     description: "Amplia variedad de artículos promocionales para impulsar tu marca. Encuentra todo lo que necesitas para destacar.",
-    heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop&q=80",
+    heroImage: promoimg,
     products: [
       {
         name: "Agenda",
