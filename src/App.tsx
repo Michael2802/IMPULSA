@@ -8,7 +8,9 @@ import Catalogo from "./pages/Catalogo";
 import NotFound from "./pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
 
+
 const queryClient = new QueryClient();
+
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -27,5 +29,7 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
+
+
 
 export default App;

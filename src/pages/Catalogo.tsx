@@ -28,12 +28,12 @@ import medicoImg from "../assets/images/Uniformemedico.png";
 import termicosImg from "../assets/images/termico.png";
 import uniformesEPPImg from "../assets/images/uniformesEPP.png";
 
-import powerbankImg from "../assets/images/powerbank.png";
+import powerbankImg from "../assets/images/powerbank.jpg";
 import USbImg from "../assets/images/USB.jpg";
-import audifonosImg from "../assets/images/audifonos.png";
+import audifonosImg from "../assets/images/Audifonos.jpg";
 import parlanteImg from "../assets/images/Bocina.jpg";
-import RAMImg from "../assets/images/RAM.png";
-import camarawebImg from "../assets/images/camara.png";
+import organizadorImg from "../assets/images/Organizador.jpg";
+import camarawebImg from "../assets/images/Soporte.jpg";
 import impresoraImg from "../assets/images/impresora.png";
 import tecladoImg from "../assets/images/teclado.png";
 import discoImg from "../assets/images/SD.png";
@@ -69,6 +69,7 @@ const catalogData: Record<string, CategoryData> = {
         name: "Uniformes Corporativos y Empresariales",
         description: "Impacto y Elegancia. Uniformes corporativos de alta gama con personalización completa. Camisas, pantalones y sastrería que proyectan una imagen profesional y unida.",
         image: empresarialImg,
+        
       },
       {
         name: "Uniformes de Cocina (Dotaciones Gastronómicas)",
@@ -100,7 +101,7 @@ const catalogData: Record<string, CategoryData> = {
   },
   tecnologia: {
     title: "Tecnología",
-    description: "Equipos de cómputo, periféricos, memorias RAM, discos SSD, impresoras, webcams y accesorios tecnológicos para equipar y repotenciar tu empresa.",
+    description: "Bocinas, Powerbanks, Audifonos, Estuches, soportes y accesorios para equipar tu compañia.",
     heroImage: tecimg,
     products: [
       {
@@ -110,7 +111,7 @@ const catalogData: Record<string, CategoryData> = {
       },
       {
         name: "Power Banks",
-        description: "Cargadores portátiles personalizados",
+        description: "Bateria auxiliar para smartphone, capacidad 5,000 mAh.",
         image: powerbankImg,
       },
       {
@@ -120,17 +121,17 @@ const catalogData: Record<string, CategoryData> = {
       },
       {
         name: "Parlantes",
-        description: "Parlantes bluetooth promocionales",
+        description: "Bocinas con tecnologia bluetooth 5.0. Con potencia de 3 W y bateria recargable de 1,000 mAh, disfruta hasta 8 horas de musica sin interrupciones.",
         image: parlanteImg,
       },
       {
-        name: "Memorias RAM",
-        description: "Módulos de memoria RAM para repotenciar equipos",
-        image: RAMImg,
+        name: "Organizadores",
+        description: "Estuches para llevar cargadores, cables y otros accesorios electronicos de manera segura, evitando enredos y daños.",
+        image: organizadorImg,
       },
       {
-        name: "Cámaras Web",
-        description: "Webcams HD para videoconferencias y streaming",
+        name: "Soportes para Celular",
+        description: "Soporte universal con diseno plegable",
         image: camarawebImg,
       },
       {

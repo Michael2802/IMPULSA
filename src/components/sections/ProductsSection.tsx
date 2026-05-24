@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import logoImpulsa from "@/assets/logo-impulsa.png";
 import productUniformes from "@/assets/product-uniformes.png";
 import productOficina from "@/assets/product-oficina.jpg";
@@ -10,21 +10,21 @@ import productTecnologia from "@/assets/product-tecnologia.jpg";
 const categories = [
   {
     title: "Dotaciones Empresariales",
-    description: "Uniformes corporativos, camisas, pantalones, overoles, batas y más prendas para tu equipo",
+    description: "Uniformes corporativos, camisas, pantalones, overoles, batas y más prendas para tu equipo.",
     image: productUniformes,
     color: "from-blue-600 to-blue-800",
     slug: "dotaciones",
   },
   {
     title: "Tecnología",
-    description: "Equipos, periféricos, memorias RAM, impresoras, webcams y accesorios para equipar y repotenciar tu empresa",
+    description: "Bocinas, Powerbanks, Audifonos, Estuches, soportes y accesorios para equipar tu compañia.",
     image: productTecnologia,
     color: "from-purple-600 to-indigo-700",
     slug: "tecnologia",
   },
   {
     title: "Artículos Promocionales",
-    description: "Agendas, esferos, bolsas, termos, morrales, relojes y mucho más para tu marca",
+    description: "Agendas, esferos, bolsas, termos, morrales, relojes y mucho más para tu marca.",
     image: productOficina,
     color: "from-amber-500 to-orange-600",
     slug: "articulos",
@@ -59,9 +59,9 @@ const ProductsSection = () => {
         {/* Categorías Principales - 3 Cards grandes */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {categories.map((category, index) => (
-            <Link
+            <div
               key={index}
-              to={`/catalogo/${category.slug}`}
+              //to={`/catalogo/${category.slug}`}
               className="group relative overflow-hidden rounded-3xl cursor-pointer block transform hover:-translate-y-2 transition-all duration-500 shadow-lg hover:shadow-2xl"
             >
               <div className="aspect-[3/4] overflow-hidden relative">
@@ -85,8 +85,8 @@ const ProductsSection = () => {
                       {category.description}
                     </p>
                     <div className="flex items-center gap-2 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
-                      <span>Ver productos</span>
-                      <ArrowRight className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" />
+                      {/* <span>Ver productos</span>
+                      <ArrowRight className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" />*/}
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const ProductsSection = () => {
                   <ArrowRight className="w-6 h-6 text-primary" />
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
