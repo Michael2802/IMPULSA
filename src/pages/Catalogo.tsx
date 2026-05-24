@@ -29,17 +29,17 @@ import termicosImg from "../assets/images/termico.png";
 import uniformesEPPImg from "../assets/images/uniformesEPP.png";
 
 import powerbankImg from "../assets/images/powerbank.jpg";
-import USbImg from "../assets/images/USB.jpg";
+import USbImg from "../assets/images/usb.png";
 import audifonosImg from "../assets/images/Audifonos.jpg";
 import parlanteImg from "../assets/images/Bocina.jpg";
 import organizadorImg from "../assets/images/Organizador.jpg";
 import camarawebImg from "../assets/images/Soporte.jpg";
-import impresoraImg from "../assets/images/impresora.png";
+import relojImg from "../assets/images/relojes.jpg";
 import tecladoImg from "../assets/images/teclado.png";
-import discoImg from "../assets/images/SD.png";
-import mouseImg from "../assets/images/mousepad.png";
-import cableImg from "../assets/images/cables.png";
-import monitorImg from "../assets/images/monitor.png";
+import mouseImg from "../assets/images/Mouse.png";
+import padmouseImg from "../assets/images/padmouse.png";
+import multipuertoImg from "../assets/images/Multipuerto.png";
+import soportecopImg from "../assets/images/SOPORTE-METALICO-PREMIUM-1.jpg";
 
 import agendaImg from "../assets/images/agendas.png";
 import bolsasImg from "../assets/images/bolsas.png";
@@ -47,7 +47,7 @@ import botellasImg from "../assets/images/botilo.png";
 import botonesImg from "../assets/images/botones.png";
 import kitImg from "../assets/images/kit.png";
 import morralesImg from "../assets/images/maleta.png";
-import soporteImg from "../assets/images/soporte.png";
+import licoreraImg from "../assets/images/Licorera.png";
 import sombrillasImg from "../assets/images/sombrilla.png";
 import esferosImg from "../assets/images/esferos.png";
 import camisaImg from "../assets/images/Camisa.png";
@@ -116,7 +116,7 @@ const catalogData: Record<string, CategoryData> = {
       },
       {
         name: "Audífonos",
-        description: "Audífonos bluetooth con caja personalizada",
+        description: "Audífonos bluetooth con caja personalizada.",
         image: audifonosImg,
       },
       {
@@ -135,34 +135,34 @@ const catalogData: Record<string, CategoryData> = {
         image: camarawebImg,
       },
       {
-        name: "Impresoras",
-        description: "Impresoras láser y multifuncionales para oficina",
-        image: impresoraImg,
+        name: "Relojes",
+        description: "Reloj LED a prueba de agua (ip65, no sumergible). ABS, banda de TPU. Función: fecha, hora.",
+        image: relojImg,
       },
       {
-        name: "Teclados y Mouse",
+        name: "Teclados",
         description: "Periféricos ergonómicos alámbricos e inalámbricos",
         image: tecladoImg,
       },
       {
-        name: "Discos Duros y SSD",
-        description: "Almacenamiento externo e interno para equipos",
-        image: discoImg,
-      },
-      {
-        name: "Mouse Pads",
-        description: "Mouse pads personalizados con tu marca",
+        name: "Mouse Inalambrico",
+        description: "Mouse plástico inalámbrico. Conexión automática mediante transmisor USB incluido.",
         image: mouseImg,
       },
       {
-        name: "Cables y Adaptadores",
-        description: "HDMI, USB-C, hubs y adaptadores multipuerto",
-        image: cableImg,
+        name: "Mouse pads",
+        description: "Mouse pads personalizados con tu marca.",
+        image: padmouseImg,
       },
       {
-        name: "Monitores",
-        description: "Pantallas y monitores para oficina y diseño",
-        image: monitorImg,
+        name: "Multipuertos",
+        description: "4 entradas USB con velocidad 2.0.",
+        image: multipuertoImg,
+      },
+      {
+        name: "Soportes Metalicos",
+        description: "Pantallas y monitores para oficina y diseño.",
+        image: soportecopImg,
       },
     ],
   },
@@ -173,63 +173,63 @@ const catalogData: Record<string, CategoryData> = {
     products: [
       {
         name: "Agenda",
-        description: "Agendas ejecutivas personalizadas con tu logo",
+        description: "Agendas ejecutivas personalizadas con tu logo.",
         image: agendaImg,
       },
      
       {
         name: "Bolsas Publicitarias",
-        description: "Bolsas de tela, papel y ecológicas personalizadas",
+        description: "Bolsas de tela, papel y ecológicas personalizadas.",
         image: bolsasImg,
       },
       {
         name: "Botellas y Termos",
-        description: "Termos y botellas de acero inoxidable con tu marca",
+        description: "Termos y botellas de acero inoxidable con tu marca.",
         image: botellasImg,
       },
       {
         name: "Botones Publicitarios",
-        description: "Botones y pins personalizados para eventos",
+        description: "Botones y pins personalizados para eventos.",
         image: botonesImg,
       },
       {
-        name: "Cuidado Personal",
-        description: "Kits de aseo, espejos, neceseres y más",
+        name: "MUG UMA",
+        description: "Disfruta de tus bebidas en cualquier lugar.Mug doble Pared personalizados.",
         image: kitImg,
       },
       {
         name: "Morrales",
-        description: "Morrales, tulas y maletines personalizados",
+        description: "Morrales, tulas y maletines personalizados.",
         image: morralesImg,
       },
       {
-        name: "Soportes",
-        description: "Soportes para tu celular personalizados y flexibles",
-        image: soporteImg,
+        name: "Set de Bar",
+        description: "Set de bar personalizado con el logo de tu marca.",
+        image: licoreraImg,
       },
       {
         name: "Sombrillas",
-        description: "Sombrillas y paraguas personalizados",
+        description: "Sombrillas y paraguas personalizados.",
         image: sombrillasImg,
       },
       {
         name: "Esferos",
-        description: "Bolígrafos y esferos con grabado o impresión",
+        description: "Bolígrafos y esferos con grabado o impresión.",
         image: esferosImg,
       },
       {
-        name: "Camisa",
-        description: "Camisas, Camisetas personalizadas",
+        name: "Llaveros",
+        description: "Llaveros personalizados, color marca a tu estilo.",
         image: camisaImg,
       },
       {
         name: "Hoddies",
-        description: "Hoddies, Buzos con tu marca personal",
+        description: "Hoddies, Buzos con tu marca personal.",
         image: hoodiesImg,
       },
       {
         name: "Gorras",
-        description: "Gorras, Cachuchas a tu estilo",
+        description: "Gorras, Cachuchas a tu estilo.",
         image: GorrasImg,
       },
     ],
