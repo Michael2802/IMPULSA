@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, X } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/banner.png";
 import { useCountUp } from "@/hooks/useCountUp";
-import scrollGif from "@/assets/bigote.png";
+import CatalogViewer from "@/components/CatalogViewer";
 
 const CountUpStat = ({ end, suffix, label }: { end: number; suffix: string; label: string }) => {
   const { count, elementRef } = useCountUp({ end, duration: 2500, suffix });
@@ -57,11 +57,11 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up-delayed">
-            <Button variant="hero" size="xl" onClick={() => setOpen(true)}>
-              Catalogo Día del Padre
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-          </div>
+              <Button variant="hero" size="xl" onClick={() => setOpen(true)}>
+                Catálogo Día del Padre
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-white/20 animate-slide-up-delayed">
@@ -73,31 +73,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <img src={scrollGif} alt="Scroll indicator" className="w-12 h-12 object-contain" />
-      </div>*/}
-
-      {/* Modal fullscreen */}
-      {open && (
-        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center">
-          {/* Botón cerrar */}
-          <button
-            onClick={() => setOpen(false)}
-            className="absolute top-4 right-4 z-50 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors border border-red-400"
-          >
-            <X className="w-5 h-5" />
-          </button>
-
-          {/* iframe fullscreen */}
-          <iframe
-            allowFullScreen
-            src="https://heyzine.com/flip-book/31e1f1c698.html"
-            className="w-full h-full"
-            style={{ border: 0 }}
-          />
-        </div>
-      )}
+      {/* Catalog Viewer */}
+      <CatalogViewer
+        open={open}
+        onOpenChange={setOpen}
+        title="Catálogo Día del Padre"
+      />
 
     </section>
   );
