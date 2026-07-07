@@ -1,7 +1,15 @@
-import { Heart, Gift, Calendar, PartyPopper, Box } from "lucide-react";
+import { Heart, Gift, Calendar, PartyPopper, Box, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const occasions = [
+  {
+    title: "20 de Julio",
+    date: "Independencia",
+    icon: Flag,
+    description: "Dotaciones y promocionales con los colores de la patria para tu empresa",
+    color: "from-[#FCD116]/20 via-[#003893]/20 to-[#CE1126]/20",
+    iconColor: "text-[#FCD116]",
+  },
   {
     title: "Día del Amor y la Amistad",
     date: "14 de Febrero",
@@ -82,7 +90,7 @@ const SpecialOccasionsSection = () => {
         </div>
 
         {/* Occasions Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {occasions.map((occasion, index) => {
             const Icon = occasion.icon;
             return (

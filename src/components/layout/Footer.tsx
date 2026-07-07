@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/70">
-          <p>© 2025 IMPULSA. Todos los derechos reservados.</p>
+          <p>© 2026 IMPULSA. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

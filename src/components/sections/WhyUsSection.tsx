@@ -91,7 +91,7 @@ const WhyUsSection = () => {
                   <div className="text-xs text-muted-foreground mt-1">Satisfacción</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">24h</div>
+                  <div className="text-3xl font-bold gradient-text">8h</div>
                   <div className="text-xs text-muted-foreground mt-1">Cotización</div>
                 </div>
                 <div className="text-center">
