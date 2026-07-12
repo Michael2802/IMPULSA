@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Flag } from "lucide-react";
-import hero20Julio from "@/assets/hero-20julio.jpg";
+import { Flag } from "lucide-react";
+import heroProductos1 from "@/assets/ChatGPT Image 12 jul 2026, 08_41_30.png";
+import heroProductos2 from "@/assets/ChatGPT Image 12 jul 2026, 08_01_01.png";
 import { useCountUp } from "@/hooks/useCountUp";
 import CatalogViewer from "@/components/CatalogViewer";
 
@@ -18,18 +19,37 @@ const CountUpStat = ({ end, suffix, label }: { end: number; suffix: string; labe
   );
 };
 
+const heroImages = [
+  { src: heroProductos1, alt: "Productos promocionales con los colores de Colombia" },
+  { src: heroProductos2, alt: "Merchandising corporativo personalizado" },
+];
+
 const HeroSection = () => {
   const [catalogOpen, setCatalogOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 8000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       <CatalogViewer open={catalogOpen} onOpenChange={setCatalogOpen} />
-      {/* Image Background */}
+      {/* Rotating Image Background */}
       <div className="absolute inset-0">
-        <img
-          src={hero20Julio}
-          alt="Productos promocionales con los colores de Colombia"
-          className="absolute inset-0 w-full h-full object-cover md:object-center object-[70%_center] scale-[1.05] md:scale-100"
-        />
+        {heroImages.map((img, idx) => (
+          <img
+            key={idx}
+            src={img.src}
+            alt={img.alt}
+            className={`absolute inset-0 w-full h-full object-cover md:object-center object-[70%_center] transition-opacity duration-1000 ease-in-out ${
+              idx === currentImage ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy-dark/80 to-navy-dark/50 md:from-navy-dark/90 md:via-navy-dark/75 md:to-navy-dark/30" />
       </div>
@@ -61,15 +81,29 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up-delayed">
-              <Button variant="hero" size="xl" asChild>
-                <a href="#contacto">
-                  Cotizar para el 20 de Julio
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" onClick={() => setCatalogOpen(true)}>
-                Ver Catálogo
-              </Button>
+              {/* Ver catálogo con hover bandera de Colombia */}
+              <button
+                onClick={() => setCatalogOpen(true)}
+                className="group relative overflow-hidden rounded-full px-8 h-14 text-base font-semibold text-white border-2 border-white/40 backdrop-blur-sm transition-all duration-300 hover:border-white hover:scale-[1.02] hover:shadow-2xl"
+              >
+                {/* Bandera de Colombia difuminada en hover */}
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 opacity-0 group-hover:opacity-90 blur-md group-hover:blur-sm transition-all duration-500"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, #FCD116 0%, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%, #CE1126 100%)",
+                  }}
+                />
+                {/* Capa oscura para contraste del texto */}
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-navy-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                />
+                <span className="relative z-10 tracking-wide drop-shadow-md">
+                  Ver Catálogo
+                </span>
+              </button>
             </div>
 
             {/* Stats with animated counters */}
@@ -80,6 +114,20 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Indicadores de slide */}
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        {heroImages.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentImage(idx)}
+            aria-label={`Ir a imagen ${idx + 1}`}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              idx === currentImage ? "w-8 bg-[#FCD116]" : "w-4 bg-white/40 hover:bg-white/60"
+            }`}
+          />
+        ))}
       </div>
     </section>
   );
