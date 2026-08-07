@@ -1,7 +1,7 @@
 import clientSiscol from "@/assets/client-siscol.png";
 import clientStarniza from "@/assets/client-starniza.png";
 import clientAlpina from "@/assets/client-alpina.png";
-import clientMercadoLibre from "@/assets/client-mercadolibre.png";
+import clientFonmitex from "@/assets/Fonmitex.png";
 import clientAkairos from "@/assets/client-akairos.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -19,8 +19,8 @@ const clients = [
     logo: clientAlpina,
   },
   {
-    name: "Mercado Libre",
-    logo: clientMercadoLibre,
+    name: "Fonmitex",
+    logo: clientFonmitex,
   },
   {
     name: "AKAIROS",

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Flag } from "lucide-react";
-import heroProductos1 from "@/assets/ChatGPT Image 12 jul 2026, 08_41_30.png";
-import heroProductos2 from "@/assets/ChatGPT Image 12 jul 2026, 08_01_01.png";
+import heroProductos1 from "@/assets/7Agosto.png";
+import heroProductos2 from "@/assets/Cometa.png";
 import { useCountUp } from "@/hooks/useCountUp";
 import CatalogViewer from "@/components/CatalogViewer";
 
@@ -57,27 +57,25 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="max-w-3xl mx-auto lg:mx-0">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FCD116]/20 border border-[#FCD116]/30 mb-6 animate-slide-up backdrop-blur-sm">
-              <Flag className="w-4 h-4 text-[#FCD116]" />
-              <span className="text-sm font-bold text-[#FCD116]">
-                20 de Julio · Independencia de Colombia
-              </span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFFF]/20 border border-[#E41B17]/30 mb-6 animate-slide-up backdrop-blur-sm">
+              <Flag className="w-4 h-4 text-[#FFFF]" />
+              <span className="text-sm font-bold text-[#FFFF]">
+                Septiembre · Mes del Amor y la Amistad</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 animate-slide-up leading-tight">
-              Viste tu marca con{" "}
+              Fotalece tu amistad con{" "}
               <span className="relative">
-                <span className="font-bold text-[#FCD116]">orgullo</span>
+                <span className="font-bold text-[#E41B17]">detalles</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 10C50 4 150 4 198 10" stroke="#FCD116" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 4 150 4 198 10" stroke="#E41B17" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>{" "}
-              colombiano
+              que dejan huella
             </h1>
 
             <p className="text-lg md:text-xl text-gray-light mb-8 max-w-xl mx-auto lg:mx-0 animate-slide-up-delayed">
-              Dotaciones y promocionales con los colores de la patria para celebrar el Día de la Independencia.
-              Polos, gorras, tazas y más — personalizados con tu logo.
+              Haz que tu empresa sea recordada con regalos corporativos y dotaciones personalizadas para celebrar el Mes del Amor y la Amistad.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up-delayed">
@@ -91,8 +89,7 @@ const HeroSection = () => {
                   aria-hidden="true"
                   className="absolute inset-0 opacity-0 group-hover:opacity-90 blur-md group-hover:blur-sm transition-all duration-500"
                   style={{
-                    background:
-                      "linear-gradient(to bottom, #FCD116 0%, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%, #CE1126 100%)",
+                   
                   }}
                 />
                 {/* Capa oscura para contraste del texto */}
@@ -124,7 +121,7 @@ const HeroSection = () => {
             onClick={() => setCurrentImage(idx)}
             aria-label={`Ir a imagen ${idx + 1}`}
             className={`h-1.5 rounded-full transition-all duration-300 ${
-              idx === currentImage ? "w-8 bg-[#FCD116]" : "w-4 bg-white/40 hover:bg-white/60"
+              idx === currentImage ? "w-8 bg-[#E41B17]" : "w-4 bg-white/40 hover:bg-white/60"
             }`}
           />
         ))}

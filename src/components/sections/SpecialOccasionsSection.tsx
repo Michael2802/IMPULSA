@@ -12,7 +12,7 @@ const occasions = [
   },
   {
     title: "Día del Amor y la Amistad",
-    date: "14 de Febrero",
+    date: "19 de Septiembre",
     icon: Heart,
     description: "Detalles personalizados para celebrar el amor",
     color: "from-pink-500/20 to-red-500/20",
