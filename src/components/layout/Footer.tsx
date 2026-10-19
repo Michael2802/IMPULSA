@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
-import logoImpulsa from "@/assets/logo-impulsa.png";
+import logoImpulsa from "@/assets/logo-impulsa-blanco.png";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logoImpulsa} 
                 alt="IMPULSA - Dotación & Promocionales" 
-                className="h-20 w-auto object-contain invert brightness-200"
+                className="h-20 w-auto object-contain brightness-200"
               />
             </div>
             <p className="text-white/80 mb-6">
@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#inicio" className="text-white/80 hover:text-primary transition-colors">Inicio</a></li>
               <li><a href="#servicios" className="text-white/80 hover:text-primary transition-colors">Servicios</a></li>
-              <li><a href="#productos" className="text-white/80 hover:text-primary transition-colors">Productos</a></li>
+              <li><a href="#proyectos" className="text-white/80 hover:text-primary transition-colors">Proyectos</a></li>
               <li><a href="#nosotros" className="text-white/80 hover:text-primary transition-colors">Nosotros</a></li>
               <li><a href="#contacto" className="text-white/80 hover:text-primary transition-colors">Contacto</a></li>
             </ul>

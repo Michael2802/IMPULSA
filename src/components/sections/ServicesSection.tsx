@@ -38,8 +38,8 @@ const ServicesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section
-    id="servicios" className="py-24 bg-muted/50">
+    <section 
+    id="servicios" className="py-24 bg-muted/50 ">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

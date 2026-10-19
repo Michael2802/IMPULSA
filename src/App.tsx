@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { useState } from "react";
 import Preloader from "./components/Preloader";
+import Nosotros from "./pages/Nosotros";
+import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
 
@@ -16,23 +18,26 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   return (
-    <>
-      {loading && <Preloader onComplete={() => setLoading(false)} />}
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/catalogo/:categoria" element={<Catalogo />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <WhatsAppButton />
-          </BrowserRouter>
-        </TooltipProvider>
-      </QueryClientProvider>
-    </>
+    <HelmetProvider>
+      <>
+        {loading && <Preloader onComplete={() => setLoading(false)} />}
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/catalogo/:categoria" element={<Catalogo />} />
+                <Route path="/nosotros" element={<Nosotros />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <WhatsAppButton />
+            </BrowserRouter>
+          </TooltipProvider>
+        </QueryClientProvider>
+      </>
+    </HelmetProvider>
   );
 };
 

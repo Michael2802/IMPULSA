@@ -36,29 +36,37 @@ const Navbar = () => {
   const navLinks = [
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
-    { name: "Productos", href: "#productos" },
-    { name: "Nosotros", href: "#nosotros" },
+    { name: "Proyectos", href: "#proyectos" },
+    { name: "Nosotros", href: "/nosotros" },
     { name: "Contacto", href: "#contacto" },
   ];
 
   const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    e.preventDefault();
-    const sectionId = href.replace("/#", "#");
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  e.preventDefault();
 
-    if (!isHomePage) {
-      navigate("/" + sectionId);
-    } else {
-      const element = document.querySelector(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-
+  // Si es una ruta normal (no ancla), navega directamente
+  if (!href.includes("#")) {
+    navigate(href);
     setIsOpen(false);
-  };
+    return;
+  }
+
+  const sectionId = href.replace("/#", "#");
+
+  if (!isHomePage) {
+    navigate("/" + sectionId);
+  } else {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  setIsOpen(false);
+};
 
   return (
     <>
